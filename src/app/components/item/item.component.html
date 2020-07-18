@@ -1,7 +1,40 @@
-<p>item works!</p>
-<img src="" alt="">
+<div class="adDetails">
+  <img [src]="adItem.img" alt="">
+  <div class="adDetails_container">
+    <div class="adDetails_title">
+      <img class="logo" [src]="adItem.logo" alt="">
+      <div class="title">
+        <h1>{{adItem.name}}</h1>
+        <div>
+          <p><img [src]="editorImg" alt="">{{adItem.editor}}</p>
+          <p><img [src]="editorImg" alt="">{{adItem.support}}</p>
+          <p><img [src]="editorImg" alt="">{{adItem.fire}}</p>
+        </div>
+      </div>
+      <span class="adStatus">暂无直播</span>
+    </div>
+    <p class="mt10">点击登记观看，进入直播间哦~</p>
+    <p class="mt10"><b>直播时间：</b></p>
+    <p class="mt5">{{adItem.time}}</p>
+    <p class="mt10"><b>主持人：</b></p>
+    <p class="mt5">{{adItem.title}}</p>
+    <p class="mt10"><b>课程大纲：</b></p>
+    <p class="mt5">{{adItem.content}}</p>
+  </div>
+</div>
 <div class="bottomButton">
-  <p>名字</p>
-  <a [ngClass]="{'isNa':isNamed,'notNa':!isNamed}">立即报名</a>
+  <p>{{adItem.name}}</p>
+  <a [ngClass]="{'isNa':changeSignStatus,'notNa':!changeSignStatus}" (click)="changeStatus()">
+    <p *ngIf="!changeSignStatus">立即报名</p>
+    <p *ngIf="changeSignStatus">取消报名</p>
+  </a>
+</div>
+
+<div class="alerting" *ngIf="showAlert" (click)="showAlert =!showAlert">
+  <!--//弹框内容-->
+  <div class="alertContent">
+    <p>{{alertInfo}}</p>
+  </div>
+  <!--遮罩-->
 </div>
 
