@@ -4,11 +4,27 @@ import {ListComponent} from "./components/list";
 import {ItemComponent} from "./components/item";
 import {ContentComponent} from "./components/content";
 import {SearchComponent} from "./components/search/search.component";
+import {TypeListComponent} from "./components/list";
+import {AdPageComponent} from "./components/ad-page";
 
 const  routes: Routes =[
-  {path:'',component:ListComponent},
+  // 直播总列表
+  {path:'',component:ListComponent,
+    children:[
+      {
+        // 点击更多查看具体列表
+        path:'listDetail',
+        component: TypeListComponent
+      }
+    ]
+  },
+  // 预约报名
   {path:'item',component:ItemComponent},
+  // 直播详情倒计时
   {path:'content',component:ContentComponent},
+  // 直播页面
+  {path:'adPage', component:AdPageComponent},
+  // 搜索页面
   {path:'search',component:SearchComponent}
 ];
 
