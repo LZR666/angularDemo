@@ -1,0 +1,50 @@
+video{
+  width: 100%;
+  display: block;
+  height: 200px;
+}
+.adContents{
+  width: 100%;
+  >img{
+    max-width: 100%;
+  }
+  .adContents_container{
+    box-sizing: border-box;
+    border-bottom: 1px solid #999;
+    .adContents_title{
+      padding: 10px 0;
+      box-sizing: border-box;
+      div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+  .adContents_container_2{
+    .count_down{
+      text-align: center;
+      font-size: 24px;
+      span{
+        font-size: 24px;
+        color: red;
+      }
+    }
+  }
+}
+.bottomButton{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  p{
+    display: block;
+    width: 80%;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin: 10px auto;
+    color: #FFFFFF;
+    background-color: skyblue;
+  }
+}

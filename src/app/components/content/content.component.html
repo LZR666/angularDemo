@@ -1,0 +1,25 @@
+<!--<video src="https://advertest.oss-cn-shanghai.aliyuncs.com/test.mp4" controls="controls" autoplay></video>-->
+<div class="adContents">
+  <img [src]="adItem.img" alt="">
+  <div class="adContents_container pdTwo10">
+    <div class="adContents_title">
+      <div>
+        <h1>{{adItem.name}}</h1>
+        <p>{{adItem.time}}</p>
+      </div>
+      <p class="mt10">{{adItem.editor}}</p>
+    </div>
+  </div>
+  <div class="adContents_container_2 pdTwo10">
+    <p class="mt20">距离直播开始还有</p>
+    <p class="count_down mt10">
+      <span>{{hour}}</span>小时
+      <span>{{minute}}</span>分
+      <span>{{second}}</span>秒
+    </p>
+  </div>
+</div>
+<a class="bottomButton" (click)="changeStatus()">
+  <p *ngIf="!isRegister">验证码观看</p>
+  <p *ngIf="isRegister">进入直播</p>
+</a>
