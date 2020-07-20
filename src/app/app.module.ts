@@ -10,6 +10,7 @@ import { AdCardComponent } from './components/list/components/list-container/com
 import { ItemComponent } from './components/item/item.component';
 import { ContentComponent } from './components/content/content.component';
 import { SearchComponent } from './components/search/search.component';
+import { AdPageComponent } from './components/ad-page/ad-page.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { SearchComponent } from './components/search/search.component';
     ItemComponent,
     ContentComponent,
     SearchComponent,
+    AdPageComponent,
   ],
   imports: [
     BrowserModule,
