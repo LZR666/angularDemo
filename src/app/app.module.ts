@@ -11,6 +11,7 @@ import { ItemComponent } from './components/item/item.component';
 import { ContentComponent } from './components/content/content.component';
 import { SearchComponent } from './components/search/search.component';
 import { AdPageComponent } from './components/ad-page/ad-page.component';
+import { TypeListComponent } from './components/list/components/type-list/type-list.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { AdPageComponent } from './components/ad-page/ad-page.component';
     ContentComponent,
     SearchComponent,
     AdPageComponent,
+    TypeListComponent,
   ],
   imports: [
     BrowserModule,
