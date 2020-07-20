@@ -1,13 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {AdCardComponent,} from './components/ad-card'
+import {adMenus, tabItems} from "../../../domain";
 
-export interface adMenus {
-  id: number;
-  name: string;
-  img: string;
-  title: string;
-  link: string;
-}
 
 @Component({
   selector: 'app-list-container',
@@ -15,13 +8,35 @@ export interface adMenus {
   styleUrls: ['./list-container.component.less']
 })
 export class ListContainerComponent implements OnInit {
-  showNum1:any = 3;
-  showNum2:any = 2;
-  showNum3:any = 1;
+  type:number = 1;
 
-  type1:any = 1;
-  type2:any = 2;
-  type3:any = 3;
+  tabSelect:number = 0;
+
+  tabItems: tabItems[] = [
+    {
+      id:1,
+      name:'直播推荐'
+    },
+    {
+      id:2,
+      name:'精彩回放'
+    },
+  ];
+
+  toggleSelected(idx){
+    this.tabSelect = idx;
+    this.adMenus=[];
+    if(idx == 0){
+      this.adMenus = this.adMenu1;
+    }else{
+      this.adMenus = this.adMenu2;
+    }
+    idx++;
+    this.type = idx;
+  }
+
+
+  adMenus:adMenus[] = [];
 
   adMenu1: adMenus[] = [
     {
@@ -30,6 +45,7 @@ export class ListContainerComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 1,
     },
     {
       id: 2,
@@ -37,6 +53,7 @@ export class ListContainerComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 1,
     },
     {
       id: 3,
@@ -44,6 +61,7 @@ export class ListContainerComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 1,
     },
     {
       id: 4,
@@ -51,15 +69,15 @@ export class ListContainerComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 1,
     },
-  ];
-  adMenu2: adMenus[] = [
     {
       id: 1,
       name:'马上开播1',
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 2,
     },
     {
       id: 2,
@@ -67,6 +85,7 @@ export class ListContainerComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 2,
     },
     {
       id: 3,
@@ -74,19 +93,79 @@ export class ListContainerComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 2,
+    },
+    {
+      id: 2,
+      name:'马上开播2',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 2,
+    },
+    {
+      id: 3,
+      name:'马上开播3',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 2,
+    },
+    {
+      id: 2,
+      name:'马上开播2',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 2,
+    },
+    {
+      id: 3,
+      name:'马上开播3',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 2,
+    },
+    {
+      id: 2,
+      name:'马上开播2',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 2,
+    },
+    {
+      id: 3,
+      name:'马上开播3',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 2,
     },
   ];
-  adMenu3: adMenus[] = [
+  adMenu2: adMenus[] = [
     {
       id: 1,
       name:'精彩回放1',
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
+      type: 3,
+    },
+    {
+      id: 1,
+      name:'精彩回放1',
+      img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
+      title: '',
+      link: '',
+      type: 3,
     }
   ];
 
-  constructor() { }
+  constructor() {
+    this.adMenus = this.adMenu1;
+  }
 
   ngOnInit(): void {
   }

@@ -3,20 +3,38 @@
   padding: 0 20px;
   box-sizing: border-box;
   height: auto;
-  .ad_list_title{
+  ul{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin: 10px auto;
-    h1,h2{
-      font-weight: normal;
-    }
-    h1{
-      font-size: 16px;
-    }
-    h2{
-      font-size: 14px;
+    width: 100%;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    height: 50px;
+    margin: 10px 0;
+    li{
+      width: 100px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #ececec;
+      &.active{
+        background-color: #999999;
+      }
     }
   }
+  //.ad_list_title{
+  //  display: flex;
+  //  justify-content: space-between;
+  //  align-items: flex-end;
+  //  margin: 10px auto;
+  //  h1,h2{
+  //    font-weight: normal;
+  //  }
+  //  h1{
+  //    font-size: 16px;
+  //  }
+  //  h2{
+  //    font-size: 14px;
+  //  }
+  //}
 
 }

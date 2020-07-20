@@ -1,18 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {adItem} from "../domain";
 
-export interface adItem{
-  id: number;
-  logo: string;
-  name: string;
-  time: string;
-  img: string;
-  title: string;
-  link: string;
-  editor:string;
-  support:number;
-  fire:number;
-  content:string;
-}
 
 @Component({
   selector: 'app-content',

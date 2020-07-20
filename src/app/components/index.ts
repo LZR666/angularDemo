@@ -4,4 +4,5 @@ export * from './item';
 export * from './content';
 export * from './ad-page';
 export * from './search';
+export * from  './domain';
 

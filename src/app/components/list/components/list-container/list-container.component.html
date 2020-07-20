@@ -1,17 +1,14 @@
+
+
+
 <div class="ad_list">
-  <div class="ad_list_title">
-    <h1>正在直播</h1>
-    <h2>更多></h2>
-  </div>
-  <app-ad-card [adMenu]="adMenu1" [showNum]="showNum1" [type]="type1"></app-ad-card>
-  <div class="ad_list_title">
-    <h1>马上开播</h1>
-    <h2>更多></h2>
-  </div>
-  <app-ad-card [adMenu]="adMenu2" [showNum]="showNum2" [type]="type2"></app-ad-card>
-  <div class="ad_list_title">
-    <h1>精彩回放</h1>
-    <h2>更多></h2>
-  </div>
-  <app-ad-card [adMenu]="adMenu2" [showNum]="showNum3" [type]="type3"></app-ad-card>
+  <ul>
+     <li
+       *ngFor="let item of tabItems; let idx = index"
+       (click)="toggleSelected(idx)"
+       [ngClass]="{'active':idx == tabSelect}">
+       {{item.name}}
+     </li>
+  </ul>
+  <app-ad-card [adMenu]="adMenus" [type]="type"></app-ad-card>
 </div>

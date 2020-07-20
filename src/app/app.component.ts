@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {adItem} from "./components/item";
+import {adItem} from "./components/domain";
 
 @Component({
   selector: 'app-root',

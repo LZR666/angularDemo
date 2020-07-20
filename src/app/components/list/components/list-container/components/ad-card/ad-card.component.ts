@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {adMenus} from "../../list-container.component";
-
+import {adMenus} from "../../../../../domain";
+import { NavigationEnd, Router } from '@angular/router';
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-ad-card',
@@ -15,25 +16,28 @@ export class AdCardComponent implements OnInit {
 
   goWhere:string = '';
 
-  constructor() {
-
-  }
+  constructor(
+    private router: Router,
+  ) {}
 
   ngOnInit(): void {
+
   }
   goDetail(num,id){
-    if(num == 1){
-      console.log(num);
-      console.log(id);
-    }else if(num == 2){
-      console.log(num);
-      console.log(id);
-    }else if(num == 3){
-      console.log(num);
-      console.log(id);
-    }else{
-      console.log(num);
-      console.log(id);
+    debugger
+    console.log(num);
+    console.log(id);
+    switch (num) {
+      case 1:
+        this.router.navigateByUrl('content');
+        break;
+      case 2:
+        this.router.navigateByUrl('content');
+        break;
+      case 3:
+        this.router.navigateByUrl('content');
+        break;
     }
+
   }
 }
