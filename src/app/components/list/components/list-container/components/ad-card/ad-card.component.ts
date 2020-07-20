@@ -13,7 +13,11 @@ export class AdCardComponent implements OnInit {
   @Input() showNum = 0;
   @Input() type = [];
 
-  constructor() { }
+  goWhere:string = '';
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

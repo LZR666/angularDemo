@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {adMenus} from "../list/components/list-container";
 
 export interface adItem{
   id: number;

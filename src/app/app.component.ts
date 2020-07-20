@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {adMenus} from './components/'
+import {adItem} from "./components/item";
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,4 @@ import {adMenus} from './components/'
 })
 export class AppComponent {
   title = 'untitled1';
-
-
 }

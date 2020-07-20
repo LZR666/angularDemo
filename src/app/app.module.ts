@@ -8,6 +8,8 @@ import { ListContainerComponent } from './components/list/components/list-contai
 import { ListSearchComponent } from './components/list/components/list-search/list-search.component';
 import { AdCardComponent } from './components/list/components/list-container/components/ad-card/ad-card.component';
 import { ItemComponent } from './components/item/item.component';
+import { ContentComponent } from './components/content/content.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { ItemComponent } from './components/item/item.component';
     ListSearchComponent,
     AdCardComponent,
     ItemComponent,
+    ContentComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,

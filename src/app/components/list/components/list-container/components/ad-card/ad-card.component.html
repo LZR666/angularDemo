@@ -1,6 +1,6 @@
 <ul class="ad_container_list">
   <li *ngFor="let menu of adMenu.slice(0,showNum)" (click)="goDetail(type,menu.id)">
-    <a *ngIf="type == 1" [routerLink]="['/item']" [queryParams]="{id:menu.id}">
+    <a *ngIf="type == 1" [routerLink]="['/content']" [queryParams]="{id:menu.id}">
       <img [src]="menu.img" alt="">
       <p>{{menu.name}}</p>
     </a>
