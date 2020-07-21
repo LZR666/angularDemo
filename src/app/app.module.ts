@@ -11,6 +11,7 @@ import { ItemComponent } from './components/item/item.component';
 import { ContentComponent } from './components/content/content.component';
 import { SearchComponent } from './components/search/search.component';
 import { ListItemComponent } from './components/list/components/list-item/list-item.component';
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ListItemComponent } from './components/list/components/list-item/list-i
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

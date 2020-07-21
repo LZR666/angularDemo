@@ -36,13 +36,13 @@ export class AdCardComponent implements OnInit {
   goDetail(num,id){
     switch (num) {
       case 1:
-        this.router.navigateByUrl('content');
+        this.router.navigateByUrl('/item');
         break;
       case 2:
-        this.router.navigateByUrl('content');
+        this.router.navigateByUrl('/item');
         break;
       case 3:
-        this.router.navigateByUrl('content');
+        this.router.navigateByUrl('/item');
         break;
     }
 
