@@ -14,19 +14,26 @@ export class AdCardComponent implements OnInit {
   @Input() showNum = 0;
   @Input() type = [];
 
-  goWhere:string = '';
+  adItem_type:string = '';
 
   constructor(
     private router: Router,
-  ) {}
-
-  ngOnInit(): void {
+  ) {
 
   }
+
+  ngOnInit(): void {
+    if(this.adMenu[0].type == 1){
+      console.log('1');
+    }else if(this.adMenu[0].type == 2){
+      console.log('2');
+    }else if(this.adMenu[0].type == 3){
+      console.log('3');
+    }else{
+      console.log('4');
+    }
+  }
   goDetail(num,id){
-    debugger
-    console.log(num);
-    console.log(id);
     switch (num) {
       case 1:
         this.router.navigateByUrl('content');

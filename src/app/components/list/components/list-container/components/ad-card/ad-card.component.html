@@ -3,23 +3,8 @@
 
 <ul class="ad_container_list">
   <li *ngFor="let menu of adMenu" (click)="goDetail(menu.type,menu.id)">
-<!--    <a *ngIf="menu.type == 1" [routerLink]="['/content']" [queryParams]="{id:menu.id}">-->
-<!--      <img [src]="menu.img" alt="">-->
-<!--      <p>正在直播</p>-->
-<!--      <p>{{menu.name}}</p>-->
-<!--    </a>-->
-<!--    <a *ngIf="menu.type == 2" [routerLink]="['/item']" [queryParams]="{id:menu.id}">-->
-<!--      <img [src]="menu.img" alt="">-->
-<!--      <p>直播推荐</p>-->
-<!--      <p>{{menu.name}}</p>-->
-<!--    </a>-->
-<!--    <a *ngIf="menu.type == 3" [routerLink]="['/item']" [queryParams]="{id:menu.id}">-->
-<!--      <img [src]="menu.img" alt="">-->
-<!--      <p>精彩回放</p>-->
-<!--      <p>{{menu.name}}</p>-->
-<!--    </a>-->
     <img [src]="menu.img" alt="">
-    <p>精彩回放</p>
+    <p>{{adItem_type}}</p>
     <p>{{menu.name}}</p>
   </li>
 </ul>
