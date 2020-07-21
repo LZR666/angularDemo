@@ -3,8 +3,6 @@
 
 <ul class="ad_container_list">
   <li *ngFor="let menu of adMenu" (click)="goDetail(menu.type,menu.id)">
-    <img [src]="menu.img" alt="">
-    <p>{{adItem_type}}</p>
-    <p>{{menu.name}}</p>
+    <app-list-item [adItem]="menu"></app-list-item>
   </li>
 </ul>

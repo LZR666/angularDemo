@@ -18,7 +18,9 @@ export interface adMenus {
   img: string;
   title: string;
   link: string;
-  type:number
+  type:number;
+  num: number;
+  editor: string;
 }
 
 export interface tabItems {

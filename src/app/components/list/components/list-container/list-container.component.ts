@@ -46,6 +46,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 1,
+      editor:'老王',
+      num:1200
     },
     {
       id: 2,
@@ -54,6 +56,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 1,
+      editor:'老王',
+      num:1200
     },
     {
       id: 3,
@@ -62,6 +66,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 1,
+      editor:'老王',
+      num:1200
     },
     {
       id: 4,
@@ -70,6 +76,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 1,
+      editor:'老王',
+      num:1200
     },
     {
       id: 1,
@@ -78,6 +86,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 2,
@@ -86,6 +96,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 3,
@@ -94,6 +106,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 2,
@@ -102,6 +116,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 3,
@@ -110,6 +126,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 2,
@@ -118,6 +136,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 3,
@@ -126,6 +146,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 2,
@@ -134,6 +156,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
     {
       id: 3,
@@ -142,6 +166,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 2,
+      editor:'老王',
+      num:1200
     },
   ];
   adMenu2: adMenus[] = [
@@ -152,6 +178,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 3,
+      editor:'老王',
+      num:1200
     },
     {
       id: 1,
@@ -160,6 +188,8 @@ export class ListContainerComponent implements OnInit {
       title: '',
       link: '',
       type: 3,
+      editor:'老王',
+      num:1200
     }
   ];
 

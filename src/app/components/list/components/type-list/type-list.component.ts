@@ -24,7 +24,9 @@ export class TypeListComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
-      type:3
+      type:3,
+      editor:'老王',
+      num:1200
     },
     {
       id: 2,
@@ -32,7 +34,9 @@ export class TypeListComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
-      type:3
+      type:3,
+      editor:'老王',
+      num:1200
     },
     {
       id: 3,
@@ -40,7 +44,9 @@ export class TypeListComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
-      type:3
+      type:3,
+      editor:'老王',
+      num:1200
     },
     {
       id: 4,
@@ -48,7 +54,9 @@ export class TypeListComponent implements OnInit {
       img: 'https://advertest.oss-cn-shanghai.aliyuncs.com/img1.jpg',
       title: '',
       link: '',
-      type:3
+      type:3,
+      editor:'老王',
+      num:1200
     },
   ];
 }
