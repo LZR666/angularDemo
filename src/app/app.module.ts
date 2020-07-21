@@ -10,8 +10,6 @@ import { AdCardComponent } from './components/list/components/list-container/com
 import { ItemComponent } from './components/item/item.component';
 import { ContentComponent } from './components/content/content.component';
 import { SearchComponent } from './components/search/search.component';
-import { AdPageComponent } from './components/ad-page/ad-page.component';
-import { TypeListComponent } from './components/list/components/type-list/type-list.component';
 import { ListItemComponent } from './components/list/components/list-item/list-item.component';
 
 
@@ -25,8 +23,6 @@ import { ListItemComponent } from './components/list/components/list-item/list-i
     ItemComponent,
     ContentComponent,
     SearchComponent,
-    AdPageComponent,
-    TypeListComponent,
     ListItemComponent,
   ],
   imports: [
