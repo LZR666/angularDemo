@@ -15,6 +15,7 @@ import {
 export class SearchComponent implements OnInit {
 
   searchText:string = '';
+  searchTitle:string='搜索';
 
   searchHistoryList:any[] = [];
 
@@ -37,18 +38,28 @@ export class SearchComponent implements OnInit {
       if(this.searchText){
         let a = this.searchHistoryList.length;
         this.searchHistoryList[a] = this.searchText;
+        this.searchText = '';
       }else {
         alert('请输入搜索内容');
         return
       }
-      this.searchText = '';
     }else{
       return
     }
-
-    console.log(this.element.nativeElement.querySelector('#searchHistory').offsetHeight || 0);
   };
+
+  clickSearch(){
+    if(this.searchText){
+      let a = this.searchHistoryList.length;
+      this.searchHistoryList[a] = this.searchText;
+      this.searchText = '';
+    }else {
+      alert('请输入搜索内容');
+      return
+    }
+  }
+
   clearHistory(){
     this.searchHistoryList = [];
-  }
+  };
 }

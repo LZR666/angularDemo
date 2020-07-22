@@ -1,19 +1,23 @@
 
 
 <div class="list_search">
-  <div>
+  <div class="search_top">
     <input type="text" placeholder="请输入直播名称/主播名"  [(ngModel)]="searchText"  (keydown)="search($event)">
-    <img [src]="searchImg" alt="">
+    <img  [src]="searchImg" (click)="clickSearch()">
   </div>
+  <p class="search_title">{{searchTitle}}</p>
 </div>
 <div *ngIf="searchHistoryList.length>0" class="search_history">
-  <p *ngIf="searchHistoryList.length>0" class="search_history_title">历史搜索</p>
+  <p class="search_history_title">历史搜索</p>
   <ul id="searchHistory">
     <li *ngFor="let item of searchHistoryList">
       {{item}}
     </li>
+    <li class="noBorder">...</li>
+    <li>更多</li>
   </ul>
-  <p *ngIf="searchHistoryList.length>0" class="clearHistory" (click)="clearHistory()">清空历史记录</p>
+
+  <p class="clearHistory" (click)="clearHistory()">清空历史记录</p>
 </div>
 <div class="search_list">
   <ul>

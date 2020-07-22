@@ -2,23 +2,27 @@
   background-color: #F5F5F5;
   padding: 10px;
   box-sizing: border-box;
-  div{
-    width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .search_top{
+    width: 85%;
     background-color: #fff;
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     input{
       border: none;
       padding: 8px;
-      width: 100%;
     }
     img{
       width: 30px;
       height: 30px;
       display: block;
     }
+  }
+  .search_title{
+    font-size: 20px;
   }
 }
 .search_history{
@@ -41,6 +45,9 @@
       border-radius: 20px;
       border: 1px solid #666;
       margin: 0 10px 10px 0;
+      &.noBorder{
+        border: 0;
+      }
     }
   }
   .clearHistory{
